@@ -6,9 +6,8 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = () => {
-  //write your code here//
-
   //Llamo a los elementos por su "id" HTML para que interactuen con el JS//
+
   document.querySelector("#boton").addEventListener("click", () => {
     document.querySelector("#excuse").innerHTML = generateExcuses();
   });
@@ -17,6 +16,7 @@ window.onload = () => {
 };
 
 //Genero cada matriz con los valores que quiero en cada categoría//
+
 let generateExcuses = () => {
   let articulo = ["Mi"];
   let quien = ["canario", "abuelo", "gato", "vecino", "jefe", "hermano", "ex"];
@@ -37,6 +37,7 @@ let generateExcuses = () => {
   ];
 
   //Me devuelve una palabra aleatoria generando un numero random de minimo 0 y como máximo la longitud de mi matriz//
+
   let numArticulo = Math.floor(Math.random() * articulo.length);
   let numQuien = Math.floor(Math.random() * quien.length);
   let numAccion = Math.floor(Math.random() * accion.length);
@@ -44,6 +45,7 @@ let generateExcuses = () => {
   let numComo = Math.floor(Math.random() * como.length);
 
   //Me devuelve mi excusa completa al crear la funcion return concatenando los resultados de cada generacion random de las matrices del paso anterior//
+
   return (
     articulo[numArticulo] +
     " " +
