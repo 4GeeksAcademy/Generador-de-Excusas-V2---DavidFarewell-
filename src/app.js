@@ -11,8 +11,6 @@ window.onload = () => {
   document.querySelector("#boton").addEventListener("click", () => {
     document.querySelector("#excuse").innerHTML = generateExcuses();
   });
-
-  console.log("Hello Rigo from the console!");
 };
 
 //Genero cada matriz con los valores que quiero en cada categoría//
