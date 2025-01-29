@@ -31,7 +31,7 @@ let generateExcuses = () => {
     "mientras estaba cenando!",
     "cuando yo no miraba!",
     "mientras estaba en el trabajo!",
-    "porque me odia"
+    "porque me odia!"
   ];
 
   //Me devuelve una palabra aleatoria generando un numero random de minimo 0 y como máximo la longitud de mi matriz//
